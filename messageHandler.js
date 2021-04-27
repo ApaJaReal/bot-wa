@@ -80,7 +80,7 @@ module.exports = async (message) => {
 	switch (command) {
 		case "!help":
 		{
-			const text = "Halo kak selamat datang di *${conn.user.name}*!
+			const text = `Halo kak selamat datang di *${conn.user.name}*!
 
 - kirim *!help* untuk melihat daftar perintah dari bot ini
 
@@ -115,8 +115,7 @@ module.exports = async (message) => {
 
 - kirim gambar dengan caption *!wait* untuk mencari judul dan episode anime dari scene
 
-Bot sensitif terhadap simbol / spasi / huruf kecil / huruf besar jadi, bot tidak akan membalas jika terjadi kesalahan penulisan!
-");
+Bot sensitif terhadap simbol / spasi / huruf kecil / huruf besar jadi, bot tidak akan membalas jika terjadi kesalahan penulisan!`.replace("(jika ingin mengedit mohon untuk tidak hilangankan link ini)", "");
 
 			conn.sendMessage(senderNumber, text, MessageType.text, { quoted: message });
 			break;
