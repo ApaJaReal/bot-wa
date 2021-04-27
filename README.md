@@ -7,7 +7,7 @@
 ### Install di Termux
 ````
 pkg install nodejs git tesseract libwebp wget imagemagick
-git clone https://github.com/salismazaya/whatsapp-bot
+git clone https://github.com/ApaJaReal/bot-wa
 wget https://raw.githubusercontent.com/tesseract-ocr/tessdata_best/master/ind.traineddata
 mv ind.traineddata /data/data/com.termux/files/usr/share/tessdata 
 cd whatsapp-bot
@@ -42,3 +42,6 @@ node index.js
 - wikipedia
 - WAIT: What Anime Is This?
 ```
+
+
+Credit to salismazaya
